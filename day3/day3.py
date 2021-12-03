@@ -23,7 +23,7 @@ position_dict = defaultdict(list)
 
 for i in range(0, len(lines[0])):
     for j in lines:
-        position_dict[i].append(int(j[i]))
+        position_dict[i].append(j[i])
 
 gamma = int(''.join(list(map(most_common_binary, position_dict.values()))), 2)
 epsilon = int(''.join(list(map(least_common_binary, position_dict.values()))), 2)
